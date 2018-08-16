@@ -58,7 +58,6 @@ void delete_file()
 		if(find == head)
 		{
 			head = head->next;
-			free(find);
 		}
 		else
 		{
@@ -67,9 +66,9 @@ void delete_file()
 				seeker = seeker->next;
 			}
 			seeker->next = find->next;
-			free(find);
-			printf("\nFile %s Deleted!", name);
 		}
+		free(find);
+		printf("\nFile %s Deleted!", name);
 	}
 }
 
