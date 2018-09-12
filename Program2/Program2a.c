@@ -96,6 +96,7 @@ void main()
 		switch(choice)
 		{
 			case 1: create_file();
+				printf("\nFile Created!");
 				break;
 			case 2: delete_file();
 				break;

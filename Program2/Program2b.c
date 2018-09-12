@@ -97,35 +97,6 @@ void create_file()
     }
 }
 
-// void create_file()
-// {
-// 	file *newfile = (file *)malloc(sizeof(file));
-// 	char name[30], dir_name[30];
-//     printf("Enter Directory Name : ");
-//     scanf("%s", &dir_name);
-//     dir *target_dir = dir_search(dir_name);
-//     if(target_dir == NULL)
-//  	{
-//         printf("\nDirectory Not Found!");
-//     }
-//     else
-//     {
-//         printf("Enter File Name : ");
-//         scanf("%s", &name);
-//         if(search(name, target_dir) != NULL)
-//         {
-//             printf("\nFile name already exists!"); 
-//         }
-//         else
-//         {
-//             strcpy(newfile->name,name);
-//             newfile->next = target_dir->head;
-//             target_dir->head = newfile;	
-//             printf("\nFile Created!");
-//         }
-//     }
-// }
-
 void delete_dir()
 {
 	char name[30];
